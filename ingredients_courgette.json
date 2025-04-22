@@ -1,0 +1,12 @@
+[
+    {"nom":"courgette", "quantite":"1 ou 2 moyennes", "code_barres":"8445509071458", "nutriscore":"A"},
+    {"nom":"gruyère râpé", "quantite":"NA", "code_barres":"3250390547372", "nutriscore":"D"},
+    {"nom":"poivre", "quantite":"NA", "code_barres":"3166296203116", "nutriscore":"NA"},
+    {"nom":"sel", "quantite":"NA", "code_barres":"3183280000728", "nutriscore":"NA"},
+    {"nom":"muscade", "quantite":"NA", "code_barres":"3166291543262", "nutriscore":"NA"},
+    {"nom":"crème épaisse", "quantite":"10 cl", "code_barres":"3155250001554", "nutriscore":"D"},
+    {"nom":"gousses d'ail", "quantite":"2", "code_barres":"3700103800312", "nutriscore":"NA"},
+    {"nom":"oeuf", "quantite":"1", "code_barres":"3245412846991", "nutriscore":"A"},
+    {"nom":"bûchette de chèvre", "quantite":"1/2", "code_barres":"3394230003144", "nutriscore":"D"},
+    {"nom":"huile d'olive", "quantite":"NA", "code_barres":"8002470023727", "nutriscore":"B"}
+]
