@@ -3,64 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <title>Gratin de Courgettes au Chèvre - IF08</title>
-    <!-- Code Css suplémentaire -->
     <link href="heroes.css" rel="stylesheet">
+    <style>
+        .preparation-steps li {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: #f8f9fa;
+        }
+
+        .ingredients-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+            padding: 0;
+        }
+
+        .ingredient-item {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            background: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .recipe-image {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Gratin de Courgettes au Chèvre</h1>
+        <img src="images/courgette.jgp" alt="Gratin de courgettes au chèvre" class="recipe-image">
     </header>
 
     <section>
-        <h2>Informations</h2>
-        <ul>
-            <li>Préparation : 10 min</li>
-            <li>Cuisson : 30 min</li>
-            <li>Personnes : 2</li>
-        </ul>
-    </section>
-    
-    <!-- Section NutriScore moyen-->
-    <section>
         <h2>📊 NutriScore</h2>
-        <p>Note globale : <strong>"note myenne"</strong></p>
+        <p>Note globale : <strong>"note moyenne"</strong></p>
     </section>
 
-    <!-- Section ingrédients -->
     <section>
         <h2>Ingrédients</h2>
-        <ul>
-            <li>2 courgettes moyennes</li>
-            <li>Gruyère râpé</li>
-            <li>10 cl de crème épaisse</li>
-            <li>2 gousses d'ail</li>
-            <li>Un oeuf</li>
-            <li>½ bûchette de chèvre</li>
-            <li>De l'huile d'olive</li>
-            <li>Sel</li>
-            <li>Poivre</li>
-            <li>Muscade</li>
+        <div class="ingredients-grid">
+            <div class="ingredient-item">2 courgettes moyennes</div>
+            <div class="ingredient-item">Gruyère râpé</div>
+            <div class="ingredient-item">10 cl de crème épaisse</div>
+            <div class="ingredient-item">2 gousses d'ail</div>
+            <div class="ingredient-item">Un oeuf</div>
+            <div class="ingredient-item">½ bûchette de chèvre</div>
+            <div class="ingredient-item">De l'huile d'olive</div>
+            <div class="ingredient-item">Sel</div>
+            <div class="ingredient-item">Poivre</div>
+            <div class="ingredient-item">Muscade</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Préparation</h2>
+        <ul class="preparation-steps">
+            <li>
+                <input type="checkbox" id="step">
+                <label for="step1">Laver les courgettes, les couper en rondelles pas trop épaisses et faire revenir dans l'huile d'olive jusqu'à ce qu'elles soient tendres, une dizaine de minutes, en remuant</label>
+            </li>
+            <li>
+                <input type="checkbox" id="step">
+                <label for="step2">Dans un bol, battre : la crème et l'oeuf</label>
+            </li>
+            <li>
+                <input type="checkbox" id="step">
+                <label for="step3">Ajouter le sel, le poivre, muscade et les gousses d'ail finement émincées</label>
+            </li>
+            <li>
+                <input type="checkbox" id="step">
+                <label for="step4">Une fois tendres, égoutter un peu les courgettes du surplus d'huile et les mettre dans un petit plat à gratin</label>
+            </li>
+            <li>
+                <input type="checkbox" id="step">
+                <label for="step5">Verser dessus la préparation à la crème</label>
+            </li>
+            <li>
+                <input type="checkbox" id="step">
+                <label for="step6">Disposer sur le plat des rondelles de chèvres et un peu de gryuère râpée</label>
+            </li>
+            <li>
+                <input type="checkbox" id="step">
+                <label for="step7">Enfourner entre 180 et 200°C pour 30 mn, le flan doit avoir pris</label>
+            </li>
         </ul>
     </section>
 
-    <!-- Section étapes de préparation -->
-    <section>
-        <h2> Préparation</h2>
-        <ol>
-            <li>Laver les courgettes, les couper en rondelles pas trop épaisses et faire revenir dans l'huile d'olive jusqu'à ce qu'elles soient tendres, une dizaine de minutes, en remuant</li>
-            <li>Dans un bol, battre : la crème et l'oeuf</li>
-            <li>Ajouter le sel, le poivre, muscade et les gousses d'ail finement émincées</li>
-            <li>Une fois tendres, égoutter un peu les courgettes du surplus d'huile et les mettre dans un petit plat à gratin</li>
-            <li>Verser dessus la préparation à la crème</li>
-            <li>Disposer sur le plat des rondelles de chèvres et un peu de gryuère râpée</li>
-            <li>Enfourner entre 180 et 200°C pour 30 mn, le flan doit avoir pris</li>
-        </ol>
-    </section>
-
-    <section>
-        <div>
-<p><a href="https://www.marmiton.org/recettes/recette_gratin-de-courgettes-au-chevre_25581.aspx" title="Source">Source recette - Marmiton</a></p>
-</div>	
+<footer style="margin-top: 40px; padding: 20px; background-color: #f8f9fa; text-align: center;">
+        <p>
+            <a href="https://www.marmiton.org/recettes/recette_gratin-de-courgettes-au-chevre_25581.aspx" 
+               title="Source"
+               style="color: #0d6efd;">Source recette de la Marmiton</a>
+        </p>
+    </footer>
 
     </section>
     
