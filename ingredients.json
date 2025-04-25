@@ -1,73 +1,66 @@
 [
-    {
-      "code": "3564707117920",
-      "nom": "Courgettes",
-      "quantite": "1",
-      "brand": "Bio Village",
-      "nutriscore": "A",
-      "image": "https://images.openfoodfacts.org/images/products/356/470/711/7920/front_fr.12.400.jpg"
-    },
-    {
-        "code": "3250390547372",
-        "nom": "Gruyère râpé",
-        "quantite": "",
-        "brand": " Itinéraire des Saveurs, Les Mousquetaires",
-        "nutriscore": "D",
-        "image": "https://images.openfoodfacts.org/images/products/325/039/054/7372/front_fr.29.400.jpg"
-    },
-    {
-        "code": "4056489470724",
-        "nom": "gousses d'ail",
-        "quantite": "2",
-        "brand": "Lidl Italiamo",
-        "nutriscore": "B",
-        "image": "https://images.openfoodfacts.org/images/products/405/648/947/0724/front_fr.43.400.jpg"
-      },
-    {
-        "code": "8002470023727",
-        "nom": "Huile d'olive",
-        "quantite": "",
-        "brand": "Carapelli",
-        "nutriscore": "B",
-        "image": "https://images.openfoodfacts.org/images/products/800/247/002/3727/front_fr.85.400.jpg"
-    },
-    {
-        "code": "3256224231523",
-        "nom": "Crème fraîche épaisse",
-        "quantite": "",
-        "brand": "U",
-        "nutriscore": "D",
-        "image": "https://images.openfoodfacts.org/images/products/325/622/423/1523/front_fr.70.400.jpg"
-
-    },
-    {
-        "code": "5400101256767",
-        "nom": "Noix de Muscade",
-        "quantite": "",
-        "brand": "Carrefour",
-        "nutriscore": "E",
-        "image": "https://images.openfoodfacts.org/images/products/540/010/125/6767/front_fr.8.400.jpg"
-
-    },
-    {
-        "code": "3270190021179",
-        "nom": "Oeufs frais BIO",
-        "quantite": "1",
-        "brand": "Carrefour BIO, Carrefour",
-        "nutriscore": "A",
-        "image": "https://images.openfoodfacts.org/images/products/327/019/002/1179/front_fr.168.400.jpg"
-
-    },
-    {
-        "code": "3523230023139",
-        "nom": "La bûche de chèvre",
-        "quantite": "1/2",
-        "brand": "Carrefour",
-        "nutriscore": "D",
-        "image": "https://images.openfoodfacts.org/images/products/352/323/002/3139/front_fr.49.400.jpg"
-
-    }
-
-
-    ]
-  
+  {
+    "code": "3564707117920",
+    "nom": "Courgettes",
+    "quantite": "1",
+    "brand": "Bio Village",
+    "nutriscore": "A",
+    "image": "https://images.openfoodfacts.org/images/products/356/470/711/7920/front_fr.12.400.jpg"
+  },
+  {
+    "code": "3250390547372",
+    "nom": "Gruyère râpé",
+    "quantite": "",
+    "brand": " Itinéraire des Saveurs, Les Mousquetaires",
+    "nutriscore": "D",
+    "image": "https://images.openfoodfacts.org/images/products/325/039/054/7372/front_fr.29.400.jpg"
+  },
+  {
+    "code": "4056489470724",
+    "nom": "gousses d'ail",
+    "quantite": "2",
+    "brand": "Lidl Italiamo",
+    "nutriscore": "B",
+    "image": "https://images.openfoodfacts.org/images/products/405/648/947/0724/front_fr.43.400.jpg"
+  },
+  {
+    "code": "8002470023727",
+    "nom": "Huile d'olive",
+    "quantite": "",
+    "brand": "Carapelli",
+    "nutriscore": "B",
+    "image": "https://images.openfoodfacts.org/images/products/800/247/002/3727/front_fr.85.400.jpg"
+  },
+  {
+    "code": "3256224231523",
+    "nom": "Crème fraîche épaisse",
+    "quantite": "",
+    "brand": "U",
+    "nutriscore": "D",
+    "image": "https://images.openfoodfacts.org/images/products/325/622/423/1523/front_fr.70.400.jpg"
+  },
+  {
+    "code": "5400101256767",
+    "nom": "Noix de Muscade",
+    "quantite": "",
+    "brand": "Carrefour",
+    "nutriscore": "E",
+    "image": "https://images.openfoodfacts.org/images/products/540/010/125/6767/front_fr.8.400.jpg"
+  },
+  {
+    "code": "3270190021179",
+    "nom": "Oeufs frais BIO",
+    "quantite": "1",
+    "brand": "Carrefour BIO, Carrefour",
+    "nutriscore": "A",
+    "image": "https://images.openfoodfacts.org/images/products/327/019/002/1179/front_fr.168.400.jpg"
+  },
+  {
+    "code": "3523230023139",
+    "nom": "La bûche de chèvre",
+    "quantite": "1/2",
+    "brand": "Carrefour",
+    "nutriscore": "D",
+    "image": "https://images.openfoodfacts.org/images/products/352/323/002/3139/front_fr.49.400.jpg"
+  }
+]
