@@ -33,7 +33,7 @@
             <div class="card shadow-sm">
               <div class="card-body text-center">
                 <h5 class="card-title">Note globale :</h5>
-                <h3 class="text-primary"><strong>"note moyenne"</strong></h3>
+                <div id="nutriscore-moyen" class="mt-4 text-center"></div>
               </div>
             </div>
           </div>
@@ -216,6 +216,46 @@
       }
 
       document.addEventListener("DOMContentLoaded", initIngredientSection);
+
+      const scoreAffichage = document.getElementById('nutriscore-moyen');
+
+// Initialisation des compteurs 
+let nutriTotal = 0;
+let nutriCount = 0;
+
+fetch('./ingredients_courgette.json')
+  .then(res => res.json())
+  .then(ingredients => {
+    // Boucle sur tous les ingredients 
+    const fetches = ingredients.map(ingredient => {
+      return fetch(`https://world.openfoodfacts.net/api/v2/product/${ingredient.code_barres}?fields=nutriscore_score`)
+        .then(res => res.json())
+        .then(data => {
+          const score = data.product.nutriscore_score;
+          if (typeof score === 'number') {
+            nutriTotal += score;
+            nutriCount++;
+          }
+        })
+    });
+
+    Promise.all(fetches).then(() => {
+      const moyenne = Math.round(nutriTotal / nutriCount);
+
+      let lettre;
+      if (moyenne <= -1) lettre = 'A';
+      else if (moyenne <= 2) lettre = 'B';
+      else if (moyenne <= 10) lettre = 'C';
+      else if (moyenne <= 18) lettre = 'D';
+      else lettre = 'E';
+
+      scoreAffichage.innerHTML = `
+        <img src="https://static.openfoodfacts.org/images/attributes/dist/nutriscore-${lettre.toLowerCase()}.svg"
+             alt="Nutri-score ${lettre}" style="height: 100px;">
+      `;
+    });
+  });
+
     </script>
   </body>
 </html>
